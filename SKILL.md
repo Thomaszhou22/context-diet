@@ -8,6 +8,29 @@ description: "Find out why your agent feels slower and dumber than it used to. S
 
 Your agent started fast and sharp. Now it's slow and foggy. The reason is almost always the same: **context bloat** — invisible weight that accumulates every time you install a skill, write a memory note, or add an instruction. Context Diet weighs it all and tells you exactly what to cut.
 
+
+## Onboarding（首次使用）
+
+当用户第一次触发本 skill 且 `memory/context_diet_state.json` 不存在时，执行一次性引导：
+
+1. **介绍能力**（一句话）：_"我可以告诉你为什么你的 agent 变慢变笨了——扫描上下文中的所有膨胀源，输出瘦身清单。"_
+
+2. **快速配置：**
+
+1. **瘦身激进度**（默认：标准）
+   - 保守（仅标记明显冗余，不建议删除任何 skill）
+   - 标准（标记冗余 + 建议卸载 60 天未用的 skill）
+   - 激进（积极建议卸载/裁剪，最大化节省）
+2. **报告语言**（默认：跟随用户输入语言）
+
+3. **写入初始状态文件** `memory/context_diet_state.json`（JSON 格式，含 `onboarded: true` 和时间戳）
+
+4. **确认完成**：_"设置完成！以后直接用就行。随时可以说'reset settings'重新配置。"_
+
+**Onboarding 只执行一次**，后续每次激活直接读取状态文件。用户说 "reset settings" 时删除状态文件重新引导。
+
+---
+
 ## When to run
 
 1. The agent "feels slower" or gives worse answers than it used to
