@@ -1,6 +1,6 @@
 ---
 name: context-diet
-version: 1.0.0
+version: 1.1.0
 description: "Find out why your agent feels slower and dumber than it used to. Scans everything loaded into context — system prompt, skills, memory files, AGENTS.md — measures token weight, flags redundancy and bloat, and ships a trim list with exact savings. Use when the agent feels sluggish, responses seem degraded, or before starting a long session. 你的智能体变慢变笨了？扫描所有加载进上下文的内容——系统提示、技能、记忆文件——测量 token 重量，标记冗余和膨胀，输出可执行的瘦身清单。"
 ---
 
