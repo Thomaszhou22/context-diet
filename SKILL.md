@@ -1,6 +1,6 @@
 ---
 name: context-diet
-version: 1.1.0
+version: 1.1.1
 description: Find out why your agent feels slower and dumber than it used to. Scans everything loaded into context system prompt, skills, memory files, AGENTS.md measures token weight, flags redundancy and bloat, and ships a trim list with exact savings. Use when the agent feels sluggish, responses seem degraded, or before starting a long session. scaneverything loaded into contextsystem promptskillsmemory filesmeasure token weight, flags redundancy and bloat, ships an actionable trim list
 ---
 
